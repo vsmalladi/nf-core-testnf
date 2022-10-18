@@ -16,5 +16,5 @@ RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then umask 0002 && /opt/conda/bi
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-RUN 
-RUN conda install -y nf-core
+RUN conda install -c bioconda nextflow
+RUN conda install -y -c bioconda nf-core
